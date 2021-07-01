@@ -1,0 +1,51 @@
+name: mca_driver_app
+description: A new Flutter project.
+version: 0.0.1+101
+environment:
+  sdk: ">=2.9.0 <3.0.0"
+  flutter: ^1.22.0
+dependencies:
+  image_picker:
+  path_provider:
+  catcher: ^0.3.22
+  flutter:
+    sdk: flutter
+  uuid:
+  flutter_hooks:
+  shared_preferences:
+  rxdart:
+  hive: ^1.4.1+1
+  hive_flutter: ^0.3.0+2
+  intl:
+  provider:
+  get_it:
+  json_annotation:
+  http:
+  pushy_flutter: ^1.1.7
+  overlay_support: ^1.2.0
+  logger:
+  logger_flutter:
+  maps_launcher:
+  ws_action:
+    git:
+      url: https://github.com/scvnc/flutter-action-ws.git
+  flutter_speed_dial: ^3.0.5
+  keep_keyboard_popup_menu:
+  cupertino_icons: 1.0.0
+dev_dependencies:
+  args:
+  json_patch:
+  hive_generator: ^0.8.1
+  faker:
+  effective_dart: ^1.2.0
+  flutter_test:
+    sdk: flutter
+  formler:
+  mockito:
+  json_serializable:
+  build_runner:
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/

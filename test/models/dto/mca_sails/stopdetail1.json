@@ -1,0 +1,156 @@
+{
+  "stops": [
+      {
+          "stop": {
+              "id": "080e1c8f-fc3f-4fab-a47c-e9b7adb92118",
+              "status": null,
+              "sequence": 1,
+              "scheduledTime": null,
+              "notes": "",
+              "type": "dropoff",
+              "items": [],
+              "driverInstructions": null
+          },
+          "order": {
+              "id": "694edb03-f9b7-4a43-ba0c-f4d4d9a0bea7",
+              "name": "Order A",
+              "status": "accepted",
+              "notes": "",
+              "driverInstructions": "Here are some instructions for the order"
+          },
+          "client": {
+              "driverInstructions": null
+          },
+          "eligibilityConstraints": [
+            {
+              "id": 5,
+              "type": "Equipment",
+              "name": "Large Truck",
+              "description": "",
+              "isDeleted": false
+            },
+            {
+              "id": 6,
+              "type": "Equipment",
+              "name": "Freezer",
+              "description": "",
+              "isDeleted": false
+            },
+            {
+              "id": 7,
+              "type": "Certification",
+              "name": "HAZMAT",
+              "description": "",
+              "isDeleted": false
+            }
+          ],
+          "address": {
+              "id": "7f007d4d-6607-4930-a6ed-eca5ef09bfd9",
+              "name": "Walgreens 48th",
+              "locationType": "Business",
+              "businessName": "Walgreens",
+              "contactFirstName": "Clark",
+              "contactLastName": "Meling",
+              "address1": "4811 O ST",
+              "address2": "STE 1",
+              "city": "Lincoln",
+              "state": "NE",
+              "zip": "68510",
+              "phone": "402-489-2232",
+              "email": "contact@example.com",
+              "driverInstructions": "",
+              "notes": "",
+              "locationPoints": [
+                  {
+                      "name": "door 24",
+                      "description": "end of main hallway"
+                  },
+                  {
+                      "name": "Freezer 2",
+                      "description": ""
+                  }
+              ],
+              "isDeleted": false,
+              "coordinates": null,
+              "createdAt": "2020-11-11T14:13:19.000Z",
+              "updatedAt": "2020-11-11T14:13:19.000Z"
+          }
+      },
+      {
+          "stop": {
+              "id": "e806a6fd-4356-4261-81c7-0b0f9431aeef",
+              "status": null,
+              "sequence": 0,
+              "scheduledTime": null,
+              "notes": "",
+              "type": "pickup",
+              "items": [],
+              "driverInstructions": null
+          },
+          "order": {
+              "id": "694edb03-f9b7-4a43-ba0c-f4d4d9a0bea7",
+              "name": "Order A",
+              "status": "accepted",
+              "notes": "",
+              "driverInstructions": "Here are some instructions for the order"
+          },
+          "client": {
+              "driverInstructions": null
+          },
+          "eligibilityConstraints": [
+            {
+              "id": 5,
+              "type": "Equipment",
+              "name": "Large Truck",
+              "description": "",
+              "isDeleted": false
+            },
+            {
+              "id": 6,
+              "type": "Equipment",
+              "name": "Freezer",
+              "description": "",
+              "isDeleted": false
+            },
+            {
+              "id": 7,
+              "type": "Certification",
+              "name": "HAZMAT",
+              "description": "",
+              "isDeleted": false
+            }
+          ],
+          "address": {
+              "id": "8f007d4d-6607-4930-a6ed-ecg5ef09bfd9",
+              "name": "CVS 48th",
+              "locationType": "Business",
+              "businessName": "CVS",
+              "contactFirstName": "Gene",
+              "contactLastName": "Meling",
+              "address1": "2755 S. 48th Street",
+              "address2": "STE 2",
+              "city": "Lincoln",
+              "state": "NE",
+              "zip": "68510",
+              "phone": "402-555-5555",
+              "email": "contact@example.com",
+              "driverInstructions": "Back Door Code 1234",
+              "notes": "",
+              "locationPoints": [
+                  {
+                      "name": "bin under microwave",
+                      "description": ""
+                  },
+                  {
+                      "name": "Freezer 4",
+                      "description": ""
+                  }
+              ],
+              "isDeleted": false,
+              "coordinates": null,
+              "createdAt": "2020-11-14T19:55:15.000Z",
+              "updatedAt": "2020-11-14T19:55:15.000Z"
+          }
+      }
+  ]
+}

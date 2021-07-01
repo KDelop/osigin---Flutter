@@ -1,0 +1,15 @@
+include: package:effective_dart/analysis_options.yaml
+linter:
+  rules:
+
+    # Disable because I don't want to encourage docs for docs sake.
+    public_member_api_docs: false
+    todo: false
+    directives_ordering: false
+
+    # This gets annoying fast with vscode.
+    prefer_relative_imports: false
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"

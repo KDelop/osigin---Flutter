@@ -1,0 +1,1 @@
+enum ItemsViewMode { pickup, dropoff }

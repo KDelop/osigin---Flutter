@@ -1,0 +1,1 @@
+consider moving the tasks folder to 'tool' as it is dart pub spec

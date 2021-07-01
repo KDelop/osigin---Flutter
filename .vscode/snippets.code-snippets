@@ -1,0 +1,55 @@
+{
+
+
+
+	"json_serialization boilerplate": {
+		"scope": "dart",
+		"prefix": "json_dto",
+		"body": [
+			"part '$TM_FILENAME_BASE.g.dart';\n",
+
+			"@JsonSerializable()",
+			"class $1 {\n",
+			"\t$1();\n",
+			"\tfactory $1.fromJson(",
+			"\t\tMap<String, dynamic> json) => _\\$$1FromJson(json);\n",
+			"\tMap<String, dynamic> toJson() => _\\$$1ToJson(this);",
+			"}"
+		],
+		"description": "The boilerplate required for a json_serializable dto"
+	},
+
+	"mockito mock": {
+		"scope": "dart",
+		"prefix": "mock",
+		"body": [
+			"class Mock$1 extends Mock",
+			"implements $1 {}"
+		],
+		"description": "start of a mockito mock"
+	},
+
+	"bdd it": {
+		"scope": "dart",
+		"prefix": "it",
+		"body": [
+			"it('$2', () {",
+			"\t",
+			"});"
+		],
+		"description": "it"
+	},
+
+	"bdd describe": {
+		"scope": "dart",
+		"prefix": "desc",
+		"body": [
+			"describe('$2', () {",
+			"\t",
+			"});"
+		],
+		"description": "it"
+	}
+
+
+}
