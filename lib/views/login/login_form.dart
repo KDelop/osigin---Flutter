@@ -5,7 +5,7 @@ import 'package:mca_driver_app/services/endpoint_service.dart';
 import '../../services/service_locator.dart';
 import '../../stores/login_store.dart';
 import 'endpoint_selector.dart';
-import '../../.env.dart';
+import 'package:dotenv/dotenv.dart' as environment;
 
 class LoginForm extends HookWidget {
   @override
@@ -79,7 +79,7 @@ class LoginForm extends HookWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Version: ${environment['APP_VERSION']}'),
+                Text('Version: ${environment.env['APP_VERSION']}'),
                 Text('Device Token: $deviceToken',
                     style: TextStyle(color: Colors.grey)),
               ],

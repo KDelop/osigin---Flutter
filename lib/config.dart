@@ -1,6 +1,5 @@
 import 'dart:collection';
-import '.env.dart';
-
+import 'package:dotenv/dotenv.dart' as environment;
 const _endpoints = [
   'https://prodserver.sqrlrx.io',
   'https://devserver.sqrlrx.io',
@@ -13,7 +12,7 @@ const _endpoints = [
 /// Possible endpoints we can connect to.
 /// Adds in the environment varaible endpoint as the first option.
 List<String> endpoints = (() {
-  var appApiEndpoint = environment['APP_API_ENDPOINT'] ?? '';
+  var appApiEndpoint = environment.env['APP_API_ENDPOINT'] ?? '';
 
   var list = LinkedHashSet<String>.from([appApiEndpoint] + _endpoints);
 

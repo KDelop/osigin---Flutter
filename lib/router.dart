@@ -5,6 +5,7 @@ import 'package:mca_driver_app/views/login/login_view.dart';
 import 'package:mca_driver_app/views/notification_center/notification_center_view.dart';
 import 'package:mca_driver_app/views/stop_list/stop_list_view.dart';
 import 'services/service_locator.dart';
+import 'stores/order_list_view_store.dart';
 import 'views/common/root_view.dart';
 
 class AppRouter {
@@ -28,6 +29,7 @@ class AppRouter {
           builder: (_) => StopListView(),
         );
       case notificationRoute:
+        sl.get<OrderListViewStore>().getLatestItems();
         return MaterialPageRoute(
           builder: (_) => NotificationCenterView(),
         );

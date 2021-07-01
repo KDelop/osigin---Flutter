@@ -30,7 +30,9 @@ class StopListTile extends StatelessWidget {
     const size = 40.0;
 
     switch (model.stopStatus) {
+      
       case StopStage.ready:
+        print('Model.StopType : ${model.stopType}');
         return _getStopTypeIcon(model.stopType);
       case StopStage.complete:
         return StopIconWidget(AppAssets.checkArrowIcon, size: 32);

@@ -4,7 +4,7 @@ import 'package:mca_driver_app/services/endpoint_service.dart';
 
 import '../../services/service_locator.dart';
 import '../../stores/login_store.dart';
-import '../../.env.dart';
+import 'package:dotenv/dotenv.dart' as environment;
 
 class McaDrawer extends HookWidget {
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class McaDrawer extends HookWidget {
             onTap: () => sl.get<LoginStore>().logOut()),
         ListTile(
             leading: Icon(Icons.handyman),
-            title: Text("${environment['APP_VERSION']}",
+            title: Text("${environment.env['APP_VERSION']}",
                 style: TextStyle(color: Color.fromRGBO(150, 150, 150, 1)))),
         ListTile(
             leading: Icon(Icons.settings),

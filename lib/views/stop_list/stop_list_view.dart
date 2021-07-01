@@ -18,6 +18,7 @@ class StopListView extends HookWidget {
 
     var list = model
         .map((model) => StopListTile(
+          
             model: model,
             onTap: () {
               store.handleItemTap(model.stopId);

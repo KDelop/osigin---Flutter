@@ -26,6 +26,7 @@ dependencies:
   logger:
   logger_flutter:
   maps_launcher:
+  dotenv: ^3.0.0
   ws_action:
     git:
       url: https://github.com/scvnc/flutter-action-ws.git

@@ -68,7 +68,7 @@ var _deliveryItemDesc = [
   'Amoxicillin',
   'Glumetza',
   'Atridox',
-  'GE Ventillator'
+  'GE Ventillator',
 ];
 
 List<DeliveryItemVm> deliveryItemVmList(int qty) {

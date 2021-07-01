@@ -15,9 +15,7 @@ import 'views/common/root_view.dart';
 
 void main() async {
   LogConsole.init();
-
   await setUpServiceLocator();
-
   // TODO.. perhaps some of the longer waiting initialization stuff needs
   // to happen once the initial runApp started.
   await sl.get<PushyService>().initialize();
